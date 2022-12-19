@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 The Mad Ones</title>
+
+    <style>
+        body,html {
+            height:100%;
+            margin:0;
+            background-color:#333;
+            font-family: 'Gill Sans';
+        }
+        /*메뉴*/
+        .navRow{
+            display:flex;
+            flex-direction:row;
+            border-bottom: solid 0.5px white;
+        }
+
+        .navColumn{
+            background-color: #333;
+            width:100%;
+            padding:20px 20px 10px;
+            text-align:center;
+        }
+
+        .navColumn a{
+        color:white;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 45px;
+        }
+
+        .navColumn a:hover{color:violet; }
+
+/*ABOUT pic*/
+.picture {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/final/poster/production1.PNG");
+            height:20%;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            position:relative;
+
+            border-bottom: solid 0.5px white;
+        }
+        .center {
+            color:white;
+            text-align: center;
+            font-size: 1.5em;
+            position:absolute;
+            top:40%;
+            left:50%;
+            transform: translate(-50%,-50%);}
+
+/*explanation*/
+    .container{
+            display:flex; 
+            flex-direction: row;
+            background-color: white;
+            padding: 30px;
+        }
+        
+        .EXcolumn{
+            width:100%;
+            padding:15px;
+            justify-content: space-evenly;
+            border-top: 1px solid rgba(51, 51, 51, 0.226);
+            border-bottom: 1px solid rgba(51, 51, 51, 0.226);
+            
+        }
+
+
+        .EXcolumn:first-child{
+            text-align: left;
+            line-height: 200%;
+            font-size: 1.5em;
+            border-left: 1px solid rgba(51, 51, 51, 0.226);
+
+
+        }
+
+        .EXcolumn:last-child{
+            text-align: justify;
+            line-height: 200%;
+            font-size: 0.9em;
+            border-right: 1px solid rgba(51, 51, 51, 0.226);
+
+        }
+
+/*go back*/
+.GoBack {
+            background-color: white;
+            height:70px;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            position:relative;
+        }
+
+        .center1 {
+            color:white;
+            text-align: center;
+            font-size: 1em;
+            position:absolute;
+            top:30%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .button{
+            background-color: white; 
+            border: 2px solid black;
+            color: black;
+            font-weight: bold;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+
+            border-radius: 30px;
+        }
+
+        .button:hover{
+            text-decoration: underline;
+        }
+
+/*footer*/
+.footer{
+            border-top:solid 0.5px white ;
+            padding:30px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!--메뉴-->
+    <div class="navRow">
+        <div class="navColumn">
+            <a href="0.main.html"><img src="/final/로고 흰.png" width=120px;></a>
+        </div>
+
+        <div class="navColumn"></div>
+        <div class="navColumn"></div>
+        <div class="navColumn"></div>
+        <div class="navColumn"></div>
+        <div class="navColumn"></div>
+
+        <div class="navColumn">
+            <a href="/final/1.about.html">ABOUT</a>
+        </div>
+
+        <div class="navColumn">
+            <a href="/final/2.production.html"> <span style="color:violet"> PRODUCTION </span></a>
+        </div>
+
+        <div class="navColumn">
+            <a href="/final/3.apply.html">APPLY</a>
+        </div>
+
+        <div class="navColumn">
+            <a href="/final/4.QnA.html">Q&A</a>
+        </div>
+    </div>
+
+    <!--ABOUT pic-->
+<div class="picture">
+    <div class="center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+        <h1> PRODUCTION </h1> 
+    </div>
+</div>
+
+<!--production exp-->
+
+<div class="container">
+    <div class="EXcolumn">
+        <img src="/final/poster/매드원즈.PNG" style="width:85%">
+    </div>
+
+    <div class="EXcolumn">
+        <h3 style="font-weight:bold">제 15회 정기공연 &lt;글더 매드원즈&gt; </h3>
+        <p>
+        <span style="font-weight:bold">공연기간</span> | 2021.10.02~10.03<br/>
+        <span style="font-weight:bold">공연 장소</span> | 소극장 혜화당<br/>
+        <span style="font-weight:bold">출연 배우</span> | 강인경 김연진 오승은 황우리<br/><br/>
+
+        <span style="font-weight:bold">CREATIVE TEAM</span><br/>
+        [오리지널 크리에이티브팀]<br/>
+        작곡 | Brian Lowdermilk<br/>
+        작사/극본 | Kait Kerrigan<br/><br/>
+
+        [마이티 크리에이티브팀]<br/>
+        번역 | 김지영 오유선 이가영 이건우 정유현<br/>
+        기획 | 김정은 엄다현 하이은<br/>
+        연출 | 이건우<br/>
+        조연출 | 이가영<br/>
+        음악감독 | 심혜준<br/>
+        무대감독 | 김정현<br/>
+        무대디자인 | 신서연 강진아<br/>
+        소품 | 서채은 고경우 안희정<br/>
+        의상분장 | 성윤진 김연우<br/>
+        음향 | 최보영 김지영 정승연<br/>
+        조명 | 정유현 김유빈 이주희<br/>
+        </p>
+    </div>
+</div>
+
+ <!--go back-->
+ <div class="GoBack">
+    <div class="center1">
+        <!--버튼 링크-->
+        <form action="/final/2.production.html" method="get" >
+            <button class="button" type="subnit">목록으로</button>
+        </form> 
+    </div>
+</div>
+
+
+<!--footer/명함-->
+<div class="footer">
+    <img src="/final/로고 흰.png" width=150px;> <br/>
+    <p><span style="color:white"> 서울 마포구 백범로 35 EB112, (우) 04107 <br/>
+    이메일: musicalmity@gmail.com <br/>
+    COPYRIGHT &#169; 2022 MITYMUSICALCOMPANY. ALL RIGHTS RESERVED.</span></p>
+</div>
+
+</body>
+</html>

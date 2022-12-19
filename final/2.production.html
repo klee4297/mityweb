@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production</title>
+
+    <style>
+        body,html {
+            height:100%;
+            margin:0;
+            background-color:#333;
+            font-family: 'Gill Sans';
+        }
+        /*메뉴*/
+        .navRow{
+            display:flex;
+            flex-direction:row;
+            border-bottom: solid 0.5px white;
+        }
+
+        .navColumn{
+            background-color: #333;
+            width:100%;
+            padding:20px 20px 10px;
+            text-align:center;
+        }
+
+        .navColumn a{
+        color:white;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 45px;
+        }
+
+        .navColumn a:hover{color:violet; }
+
+/*ABOUT pic*/
+.picture {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("poster/production1.PNG");
+            height:20%;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            position:relative;
+
+            border-bottom: solid 0.5px white;
+        }
+
+        .center {
+            color:white;
+            text-align: center;
+            font-size: 1.5em;
+            position:absolute;
+            top:40%;
+            left:50%;
+            transform: translate(-50%,-50%);}
+
+        /*포스터*/
+
+        .row {
+            margin:30px;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+        }
+
+        .column{
+            text-align:center;
+            flex:15%;
+            color:white;
+            padding:0px 0px 30px 0px;
+
+            opacity: 1;
+            transition: 1s ease;
+            backface-visibility: hidden;
+        }
+
+        .column a{
+            color:white;
+            text-decoration:none;
+        }
+
+
+        .content:hover .image {
+            opacity: 0.3;
+            }
+
+        .content:hover .middle {
+            opacity: 0.8;
+            }
+
+
+        /*footer*/
+        .footer{
+            border-top:solid 0.5px white ;
+            padding:30px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+        <!--메뉴-->
+        <div class="navRow">
+            <div class="navColumn">
+                <a href="0.main.html"><img src="/final/로고 흰.png" width=120px;></a>
+            </div>
+    
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+    
+            <div class="navColumn">
+                <a href="/final/1.about.html">ABOUT</a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/2.production.html"> <span style="color:violet"> PRODUCTION </span></a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/3.apply.html">APPLY</a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/4.QnA.html">Q&A</a>
+            </div>
+        </div>
+
+        <!--ABOUT pic-->
+    <div class="picture">
+        <div class="center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+            <h1> PRODUCTION </h1> 
+        </div>
+    </div>
+
+        <!--포스터-->
+
+        <div class="row">
+            <div class="column">
+                <a href="/final/production/1.ILoveYou.html">
+                <div class="content">
+                    <img src="/final/poster/아이럽유.jpg" style="width:350px" class="image">
+                    <h4> 2013 &lt;I Love You&gt;</h4>
+                </div>
+                 </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/2.GALA.html">
+                    <img src="/final/poster/갈라.jpg" style="width:350px"  class="image">
+                    <h4> 2014 &lt;Gala Musical&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/3.SWEENY.html">
+                    <img src="/final/poster/스토.jpg" style="width:350px"  class="image">
+                    <h4> 2014 &lt;Sweeny Todd&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/4.GLOOMY.html">
+                    <img src="/final/poster/글루미데이.png" style="width:350px"  class="image">
+                    <h4> 2015 &lt;Gloomy Day&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/5.AVENUEQ.html">
+                    <img src="/final/poster/avenueQ.png" style="width:350px"  class="image">
+                    <h4> 2015 &lt;Avenue Q&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/6.ILUB.html">
+                    <img src="/final/poster/아이럽유비커즈.jpg" style="width:350px"  class="image"> 
+                    <h4> 2016 &lt;I Love You Because&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/7.MUHAN.html">
+                    <img src="/final/poster/무한동력.jpg" style="width:350px"  class="image">
+                    <h4> 2016 &lt;무한동력&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/8.B612.html">
+                    <img src="/final/poster/소행성.jpg" style="width:350px"  class="image">
+                    <h4> 2017 &lt;소행성B612&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/9.N2N.html">
+                    <img src="/final/poster/넥투노.jpg" style="width:350px"  class="image">
+                    <h4> 2017 &lt;Next To Nortmal&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/10.K78.html">
+                    <img src="/final/poster/콩칠팔.jpg" style="width:350px"  class="image">
+                    <h4> 2018 &lt;콩칠팔 새삼륙&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/11.FUNHOME.html">
+                    <img src="/final/poster/펀홈.jpg" style="width:350px"  class="image">
+                    <h4> 2018 &lt;Fun Home&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/12.TL5Y.html">
+                    <img src="/final/poster/라파이.jpg" style="width:350px"  class="image">
+                    <h4> 2019 &lt;The Last Five Years&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/13.LW.html">
+                    <img src="/final/poster/LW.png" style="width:350px"  class="image">
+                    <h4> 2019 &lt;Little Women&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/14.2021GALA.html">
+                    <img src="/final/poster/마이티갈라쇼.png" style="width:350px"  class="image">
+                    <h4> 2021 &lt;마이티 갈라쇼&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/15.TMO.html">
+                    <img src="/final/poster/매드원즈.PNG" style="width:350px"  class="image">
+                    <h4> 2021 &lt;The Mad Ones&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/16.MAYBE.html">
+                    <img src="/final/poster/어햎.jpg" style="width:350px"  class="image">
+                    <h4> 2022 &lt;어쩌면 해피엔딩&gt;</h4>
+                </div>
+            </a>
+            </div>
+
+            <div class="column">
+                <div class="content">
+                    <a href="/final/production/17.UNI.html">
+                    <img src="/final/poster/유앤잇.jpg" style="width:350px"  class="image">
+                    <h4> 2022 &lt;유앤잇&gt;</h4>
+                </div>
+                </div>
+            </a>
+            </div>
+
+<!--footer/명함-->
+<div class="footer">
+    <img src="/final/로고 흰.png" width=150px;> <br/>
+    <p><span style="color:white"> 서울 마포구 백범로 35 EB112, (우) 04107 <br/>
+    이메일: musicalmity@gmail.com <br/>
+    COPYRIGHT &#169; 2022 MITYMUSICALCOMPANY. ALL RIGHTS RESERVED.</span></p>
+</div>
+</body>
+</html>

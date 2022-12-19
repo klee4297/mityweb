@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+
+    <style>
+        body,html {
+            height:100%;
+            margin:0;
+            font-family: 'Gill Sans';
+        }
+
+        /*메뉴*/
+        .navRow{
+            display:flex;
+            flex-direction:row;
+            border-bottom: solid 0.5px white;
+        }
+
+        .navColumn{
+            background-color: #333;
+            width:100%;
+            padding:20px 20px 10px;
+            text-align:center;
+        }
+
+        .navColumn a{
+        color:white;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 45px;
+        }
+
+        .navColumn a:hover{color:violet; }
+        
+/*공연 예매*/
+        .tickets {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("텀블벅\ 썸네일.jpg");
+            height:500px;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            position:relative;
+            
+            border-bottom: solid 0.5px white;
+        }
+
+        .center {
+            color:white;
+            text-align: center;
+            font-size: 1.5em;
+            position:absolute;
+            top:40%;
+            left:50%;
+            transform: translate(-50%,-50%);}
+
+        .button{
+            border: 2px solid black;
+            background-color:none;
+            color:black;
+            padding:14px 28px;
+            font-size:16px;
+            cursor:pointer;
+            border-radius:5px;
+
+            position:absolute;
+            top:120%;
+            transform: translate(-50%,-50%);
+           
+        }
+
+        .button:hover{
+            background:black;
+            color:white;
+        }
+        
+/*유튜브 영상*/
+        .index {
+
+            font-size: 1.1em;
+            color:white;
+            line-height: 10px;
+            padding: 45px 0px 0px 30px;
+        }
+
+        .YouRow{
+            margin: 50px;
+            display:flex;
+            flex-direction:row;
+
+        }
+
+        .YouColumn{
+            background-color: #333;
+            width:100%;
+            padding:10px;
+            text-align:justify;
+            font-size: 0.9em;
+        }
+
+        .title {
+            display:block;
+            max-width:100%;
+            overflow:hidden;
+            text-overflow: ellipsis;
+        }
+
+        .YouColumn:hover{
+            text-decoration: underline;
+        }
+
+
+        .YouColumn a{
+        color:white;
+        text-decoration: none;
+        line-height: 20px;
+        font-weight: bold;
+
+        }
+/*인스타*/
+
+        .INRow{
+            margin:50px;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+
+        }
+
+        .INColumn{
+            text-align:center;
+            flex:16%;
+            color:white;
+            padding:0px 30px 30px 0px;
+        }
+
+/*footer*/
+        .footer{
+            padding:30px;
+            font-size: 0.8em;
+        }
+
+    </style>
+</head>
+
+<body style="background-color:#333;">
+    <!--메뉴-->
+    <div class="navRow">
+        <div class="navColumn">
+            <a href="0.main.html"><img src="/final/로고 흰.png" width=120px;></a>
+        </div>
+
+        <div class="navColumn"></div>
+        <div class="navColumn"></div>
+        <div class="navColumn"></div>
+        <div class="navColumn"></div>
+        <div class="navColumn"></div>
+
+        <div class="navColumn">
+            <a href="/final/1.about.html">ABOUT</a>
+        </div>
+
+        <div class="navColumn">
+            <a href="/final/2.production.html">PRODUCTION</a>
+        </div>
+
+        <div class="navColumn">
+            <a href="/final/3.apply.html">APPLY</a>
+        </div>
+
+        <div class="navColumn">
+            <a href="/final/4.QnA.html">Q&A</a>
+        </div>
+    </div>
+
+    <!--공연 예매-->
+    <div class="tickets">
+        <div class="center">
+            <h1> 제 17회 정기공연 </br>&lt;유앤잇&gt;</h1>
+            <p>2022/9/1~2022/9/3</br></p>
+            <!--버튼 링크-->
+            <form action="https://link.tumblbug.com/3VfWXR2Jnvb" method="get" target="_blank">
+                <button class="button" type="subnit">예매하기</button>
+            </form> 
+        </div>
+    </div>
+
+    <!--유튜브 영상-->
+    <div class="index"><h2>유튜브 영상</h2></div>
+
+
+    <div class="YouRow">
+        <div class="YouColumn">
+            <a href="https://youtu.be/eeZohSMHv3w">
+                <img src="/final/youtube/hqdefault.jpg" width=100%;>
+                <div class="title">【뮤지컬 유앤잇】유앤잇 The END ㅣ공연 과정 30초 요약</div>
+            </a>
+        </div>
+
+        <div class="YouColumn">
+            <a href="https://youtu.be/tqjDp1Psl74">
+                <img src="/final/youtube/hqdefault-2.jpg" width=100%;>
+                <div class="title">뮤지컬 유앤잇 ost '기회야' 연습영상 by 서강대학교 뮤지컬 극단 마이티</div>
+            </a>
+        </div>
+
+        <div class="YouColumn">
+            <a href="https://youtu.be/BwqR4MPt0Gk">
+                <img src="/final/youtube/hqdefault-3.jpg" width=100%;>
+                <div class="title">220519 서강대학교 대동제 공연</div>
+            </a>
+        </div>
+
+        <div class="YouColumn">
+            <a href="https://youtu.be/7D3VkJhwazM">
+                <img src="/final/youtube/hqdefault-7.jpg" width=100%;>
+                <div class="title">서강대학교 건학60주년 기념축제 두 번째 동아리 소개 영상 : MITY</div>
+            </a>
+        </div>
+
+        <div class="YouColumn">
+            <a href="https://youtu.be/mbCkSNNuN58">
+                <img src="/final/youtube/hqdefault-6.jpg" width=100%;>
+                <div class="title">알아두면 쓸모있는 뮤지컬 작곡가 TOP 10! [上편]</div>
+            </a>
+        </div>
+    </div>
+
+
+<!--인스타 사진 수정 필요-->
+<div style="color: #777;background-color:white; ">
+    <div style="font-size: 1.1em; line-height: 10px; padding: 45px 0px 0px 30px;"><h2>인스타그램</h2></div>
+
+
+    <div class="INRow">
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/CiUPZCBjbeQ/">
+                <img src="about/insta1.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/CiUPIoVj9Mx/">
+                <img src="about/insta2.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/CiUO-WIDILA/">
+                <img src="about/insta3.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/CiSyxBHvS2T/">
+                <img src="about/insta4.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/CiSvk4AvxpR/">
+                <img src="about/insta5.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/CiHU9WHPElj/">
+                <img src="about/insta6.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/CiHNadKvImG/">
+                <img src="about/insta7.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/CiHNQKSPk5n/">
+                <img src="about/insta8.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/Ch7WMxxvgng/">
+                <img src="about/insta9.PNG" width=100%;>
+            </a>
+        </div>
+
+        <div class="INColumn">
+            <a href="https://www.instagram.com/p/Ch7WCYyvJlB/">
+                <img src="about/insta10.PNG" width=100%;>
+            </a>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<!--footer/명함-->
+    <div class="footer">
+        <img src="/final/로고 흰.png" width=150px;> <br/>
+        <p><span style="color:white"> 서울 마포구 백범로 35 EB112, (우) 04107 <br/>
+        이메일: musicalmity@gmail.com <br/>
+        COPYRIGHT &#169; 2022 MITYMUSICALCOMPANY. ALL RIGHTS RESERVED.</span></p>
+    </div>
+</body>
+</html>

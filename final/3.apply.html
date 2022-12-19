@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLY</title>
+
+    <style>
+        body,html {
+            height:100%;
+            margin:0;
+            background-color:#333;
+            font-family: 'Gill Sans';
+        }
+        /*메뉴*/
+        .navRow{
+            display:flex;
+            flex-direction:row;
+            border-bottom: solid 0.5px white;
+        }
+
+        .navColumn{
+            background-color: #333;
+            width:100%;
+            padding:20px 20px 10px;
+            text-align:center;
+        }
+
+        .navColumn a{
+        color:white;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 45px;
+        }
+
+        .navColumn a:hover{color:violet; }
+
+    /*ABOUT pic*/
+.picture {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("apply2.png");
+            height:20%;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            position:relative;
+
+            border-bottom: solid 0.5px white;
+        }
+
+        .center {
+            color:white;
+            text-align: center;
+            font-size: 1.5em;
+            position:absolute;
+            top:40%;
+            left:50%;
+            transform: translate(-50%,-50%);}
+
+
+/*go to blog*/
+    .blog {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("go\ to\ blog.jpg");
+            height:350px;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            position:relative;
+        }
+
+        .center1 {
+            color:white;
+            text-align: center;
+            font-size: 1.5em;
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .button{
+            background-color: rgba(0,0,0,0.5); 
+            border: 2px solid violet;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 30px;
+            margin: 4px 2px;
+            cursor: pointer;
+
+            border-radius: 30px;
+        }
+
+        .button:hover{
+            background:black;
+            color:white;
+        }
+        /*footer*/
+        .footer{
+            border-top:solid 0.5px white ;
+            padding:30px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+        <!--메뉴-->
+        <div class="navRow">
+            <div class="navColumn">
+                <a href="0.main.html"><img src="/final/로고 흰.png" width=120px;></a>
+            </div>
+    
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+    
+            <div class="navColumn">
+                <a href="/final/1.about.html">ABOUT</a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/2.production.html"> PRODUCTION </span></a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/3.apply.html"><span style="color:violet">APPLY</span></a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/4.QnA.html">Q&A</a>
+            </div>
+        </div>
+
+<!--ABOUT pic-->
+    <div class="picture">
+        <div class="center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+            <h1> APPLY </h1> 
+        </div>
+    </div>
+
+    <!--How to Apply-->
+    <div style="color:  #444;background-color:white;text-align:center;padding: 50px; text-align: justify;">
+
+        <h2>How to Apply</h2>
+
+        <p style="padding:10px 7% 30px;">매년 3월, 9월에 신입 단원을 모집하고 있습니다. <br/>각종 커뮤니티 사이트 및 마이티 공식계정을 통해 모집중인지 확인하고 지원하시길 바랍니다
+        <br/><br/>
+        지원서는 블로그에 첨부되어 있으며, 작성 후 sgmity@naver.com으로 보내주시면 됩니다.<br/>
+        1, 2지망에 배우가 있는 사람은 면접 시 기재하신 자유곡을 준비해주세요. MR은 별도로 제공되지 않으니, 면접 시 MR도 함께 준비해 주시기 바랍니다.
+        </p>
+    </div>
+    <!--go to blog-->
+    <div class="blog">
+        <div class="center1">
+            <!--버튼 링크-->
+            <form action="https://m.blog.naver.com/sgmity" method="get" target="_blank">
+                <button class="button" type="subnit">GO TO BLOG</button>
+            </form> 
+        </div>
+    </div>
+
+    <!--footer/명함-->
+    <div class="footer">
+        <img src="/final/로고 흰.png" width=150px;> <br/>
+        <p><span style="color:white"> 서울 마포구 백범로 35 EB112, (우) 04107 <br/>
+        이메일: musicalmity@gmail.com <br/>
+        COPYRIGHT &#169; 2022 MITYMUSICALCOMPANY. ALL RIGHTS RESERVED.</span></p>
+    </div>
+</body>
+</html>

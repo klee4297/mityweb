@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QNA</title>
+
+    <style>
+        body,html {
+            height:100%;
+            margin:0;
+            background-color:#333;
+            font-family: 'Gill Sans';
+        }
+        /*메뉴*/
+        .navRow{
+            display:flex;
+            flex-direction:row;
+            border-bottom: solid 0.5px white;
+        }
+
+        .navColumn{
+            background-color: #333;
+            width:100%;
+            padding:20px 20px 10px;
+            text-align:center;
+        }
+
+        .navColumn a{
+        color:white;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 45px;
+        }
+
+        .navColumn a:hover{color:violet; }
+
+    /*ABOUT pic*/
+    .picture {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("QNA.JPG");
+            height:20%;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            position:relative;
+
+            border-bottom: solid 0.5px white;
+        }
+
+        .center {
+            color:white;
+            text-align: center;
+            font-size: 1.5em;
+            position:absolute;
+            top:40%;
+            left:50%;
+            transform: translate(-50%,-50%);}
+    
+    /*QNA*/
+        
+        .qna{
+            background-color: #eee;
+            padding: 50px;
+        }
+
+        .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+        background-color: #ccc; 
+        }
+
+        .accordion:after {
+        content: '\002B'; /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+        }
+
+        .active:after {
+        content: "\2212"; /* Unicode character for "minus" sign (-) */
+        }
+
+        .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+        text-align: justify;
+        }
+
+        /*footer*/
+        .footer{
+            border-top:solid 0.5px white ;
+            padding:30px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+        <!--메뉴-->
+        <div class="navRow">
+            <div class="navColumn">
+                <a href="0.main.html"><img src="/final/로고 흰.png" width=120px;></a>
+            </div>
+    
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+            <div class="navColumn"></div>
+    
+            <div class="navColumn">
+                <a href="/final/1.about.html">ABOUT</a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/2.production.html"> PRODUCTION </span></a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/3.apply.html">APPLY</a>
+            </div>
+    
+            <div class="navColumn">
+                <a href="/final/4.QnA.html"><span style="color:violet">Q&A</span></a>
+            </div>
+        </div>
+
+<!--ABOUT pic-->
+<div class="picture">
+    <div class="center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+        <h1> QNA </h1> 
+    </div>
+</div>
+
+<!--QNA-->
+<div class="qna">
+
+    <h3> 자주 받는 질문 </h3>
+    <p>각 질문을 눌러 답변을 확인하세요!<br/><br/></p>
+
+    <button class="accordion">1. 신입단원 리크루팅은 언제인가요?</button>
+    <div class="panel">
+    <p>신입단원 모집은 3월, 9월에 진행합니다. <br/>마이티 공식 계정을 팔로우하여 모집 소식을 확인하세요~!</p>
+    </div>
+
+    <button class="accordion">2. 공연은 언제 올리나요?</button>
+    <div class="panel">
+    <p>공연은 1년에 2번, 주로 3~4월과 9~10월에 올립니다. <br/>정확한 날짜는 공연장 대관기간과 공연진들의 상황에 따라 달라집니다.</p>
+    </div>
+
+    <button class="accordion">3. 필수로 채워야하는 활동기간이 있나요?</button>
+    <div class="panel">
+    <p>2번의 공연을 참여해야합니다. <br/>공연을 올리는건 1학기 2학기이고 준비기간이 주로 방학인지라 대략 1년 정도 참여한다고 생각하시면 됩니다.</p>
+    </div>
+
+    <button class="accordion">4. 뮤지컬을 잘 몰라도 지원해도 되나요?</button>
+    <div class="panel">
+    <p>그럼요! 열정과 흥만 있다면 누구나 지원 가능합니다. <br/>마이티에는 뮤지컬을 정말 진심으로 좋아하는 사람부터 뮤지컬을 막 알아가는 사람까지 다양하게 있습니다. <br/>마이티에서 함께 뮤지컬의 매력을 알아가보아요</p>
+    </div>
+
+    <button class="accordion">5. 지원한 1,2지망에서 떨어지면 어떡하죠?</button>
+    <div class="panel">
+    <p>지원서에 적은 1,2지망은 다음 공연에 참여할 공연진들의 팀 선호도를 보기 위한것으로, 합격여부에는 영향이 크게 없습니다. <br/>매 공연 마이티는 새로 팀을 꾸리게 되는데, 그때 자신이 들어갈 팀을 정할 수 있습니다. 매번 다른 팀에서 활동해볼 수 있는것도 마이티의 매력포인트입니다.</p>
+    </div>
+</div>
+
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+    </script>
+
+    <!--footer/명함-->
+    <div class="footer">
+        <img src="/final/로고 흰.png" width=150px;> <br/>
+        <p><span style="color:white"> 서울 마포구 백범로 35 EB112, (우) 04107 <br/>
+        이메일: musicalmity@gmail.com <br/>
+        COPYRIGHT &#169; 2022 MITYMUSICALCOMPANY. ALL RIGHTS RESERVED.</span></p>
+    </div>
+</body>
+</html>
